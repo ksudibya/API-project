@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const Beer = new Schema({
-  id: String,
   name: String,
   phone: String,
   website_url: String,
