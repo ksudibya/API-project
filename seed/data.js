@@ -4,9 +4,9 @@ import beer from "./beer.json" assert {type: "json" };
 
 const insertData = async() => {
     // Reset Database
-    await db.dropDatabase()
+    await Beer.deleteMany({})
     // Insert beer into the database
-    await Beer.insertMany(beer);
+    await Beer.create(beer);
 
     // Close DB connection
     db.close();
